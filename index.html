@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en' style='width: 208px; height: 332px;'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='./tw-output.css' rel='stylesheet'>
+    <script src='./main.js' defer></script>
+    <title>Countdown</title>
+</head>
+<body class='w-full bg-neutral-900 grid gap-6 justify-center p-4'>
+    <span>
+        <h1 class='font-bold text-purple-500 text-xl text-center'>Countdown Timer</h1>
+        <h2 class='font-bold text-neutral-400 text-lg text-center' id='timer'>0d, 0h, 0m, 0s</h2>
+    </span>
+    <label class='font-semibold text-white text-base' for='start-date'>
+        Start Date:
+        <input class='bg-neutral-600 p-1 rounded mt-2' type='datetime-local' id='start-date'>
+    </label>
+    <label class='font-semibold text-white text-base' for='end-date'>
+        End Date:
+        <input class='bg-neutral-600 p-1 rounded mt-2' type='datetime-local' id='end-date'>
+    </label>
+    <button class='font-semibold text-base leading-none p-3 bg-purple-500 text-white rounded duration-300 active:brightness-75' id='execute'>Start Countdown</button>
+</body>
+</html>
